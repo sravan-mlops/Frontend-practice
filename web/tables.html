@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML TABLES</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        /* border-radius: 5px; */
+        border-style: double;
+        /* border-spacing: 15px; */
+      }
+      th,
+      /* td {
+        background-color: rgb(204, 230, 230);
+        border-color: brown;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+      } */
+      table,
+      tr {
+        border-bottom: 1px solid #ddd;
+      }
+      tr:hover {
+        background-color: #d6eeee;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width: 100%">
+      <tr>
+        <th style="width: 70%">NAME</th>
+        <th>S.NO</th>
+      </tr>
+      <tr style="height: 150px">
+        <td>sravan</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>chintu</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>mintu</td>
+        <td>3</td>
+      </tr>
+    </table>
+    <br />
+    <table style="width: 45%">
+      <tr style="height: 45px">
+        <th style="padding: 5px; text-align: left">name</th>
+        <td>sravan</td>
+        <td>chintu</td>
+      </tr>
+      <tr style="height: 40px">
+        <th>s.no</th>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+    </table>
+    <br />
+    <table style="width: 100%">
+      <caption>
+        name and age table
+      </caption>
+      <tr>
+        <th colspan="2">name</th>
+        <th>age</th>
+      </tr>
+      <tr>
+        <td>sravan</td>
+        <td>kumar</td>
+        <td>31</td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <caption>
+        WEEKDAYS
+      </caption>
+      <colgroup>
+        <col span="2" />
+        <col span="3" style="visibility: collapse" />
+        <col span="2" style="background-color: darkorange" />
+      </colgroup>
+      <tr>
+        <th>monday</th>
+        <th>tuesday</th>
+        <th>wednesday</th>
+        <th>thursday</th>
+        <th>friday</th>
+        <th>saturday</th>
+        <th>sunday</th>
+      </tr>
+    </table>
+  </body>
+</html>
