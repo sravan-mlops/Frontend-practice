@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML forms practice</title>
+  </head>
+  <body>
+    <label for="cars">Choose a car</label>
+    <select name="cars" id="cars" size="1" multiple>
+      <option value="Volvo">Volvo</option>
+      <option value="fiat" selected>Fiat</option>
+      <option value="audi">Audi</option>
+      <option value="BMW">BMW</option>
+    </select>
+    <br />
+    <br />
+    <textarea name="message" id="txtarea" rows="10" cols="70">
+Do you love to read in English? Why not try this B2 First Reading and Use of English question? 📖
+First read the text, then choose the correct answer (A, B, C or D) which best describes the text.</textarea
+    >
+    <br />
+    <br />
+    <br />
+    <textarea name="poem" id="poen" style="width: 50%; height: 200px">
+ In the hush of velvet night,
+Dreams awake where shadows lie,
+Hearts that wander, soft and bright,
+Twinkle like the stars in sky.</textarea
+    >
+    <br />
+    <br />
+    <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+    <br />
+    <br />
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fname">First Name</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last Name</label><br />
+        <input type="text" id="lname" name="lname" value="Cena" /><br />
+        <br />
+        <input type="submit" value="submit" />
+        <input type="reset" value="reset" />
+      </fieldset>
+    </form>
+    <br />
+    <br />
+    <h3>Datalist is used to show the list of browsers available</h3>
+    <form action="">
+      <input list="Browsers" />
+      <datalist id="Browsers">
+        <option value="Edge"></option>
+        <option value="Bing"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+        <option value="Chrome"></option>
+      </datalist>
+    </form>
+  </body>
+</html>
