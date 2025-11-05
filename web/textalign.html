@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paragraph Alignment with Images</title>
+    <style>
+      p.right {
+        text-align: right;
+      }
+      p.left {
+        text-align: left;
+      }
+      p.center {
+        text-align: center;
+      }
+      p.justify {
+        text-align: justify;
+      }
+
+      /* image vertical alignment classes */
+      .baseline {
+        vertical-align: baseline;
+      }
+      .top {
+        vertical-align: text-top;
+      }
+      .bottom {
+        vertical-align: text-bottom;
+      }
+
+      img {
+        width: 25px;
+        height: 25px;
+        margin-left: 6px; /* space between text and image */
+      }
+
+      p {
+        margin-bottom: 30px; /* spacing between paragraphs */
+      }
+    </style>
+  </head>
+  <body>
+    <p class="right">
+      Indian states.
+      <img
+        class="baseline"
+        src="https://media.giphy.com/media/5EoXl18xnHRSTJ0E34/giphy.gif"
+        alt="gif"
+      />
+    </p>
+
+    <p class="left">
+      Indian states
+      <img
+        class="top"
+        src="https://media.giphy.com/media/5EoXl18xnHRSTJ0E34/giphy.gif"
+        alt="gif"
+      />
+    </p>
+
+    <p class="center">
+      Indian states
+      <img
+        class="bottom"
+        src="https://media.giphy.com/media/5EoXl18xnHRSTJ0E34/giphy.gif"
+        alt="gif"
+      />
+    </p>
+
+    <p class="justify">
+      Stretches the lines so that each line has equal width. Stretches the
+      lines, so that each line has equal width. Stretches the lines so that each
+      line has equal width.
+      <img
+        src="https://media.giphy.com/media/5EoXl18xnHRSTJ0E34/giphy.gif"
+        alt="gif"
+      />
+    </p>
+  </body>
+</html>
